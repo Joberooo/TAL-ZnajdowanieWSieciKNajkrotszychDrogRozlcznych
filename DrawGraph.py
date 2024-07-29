@@ -7,5 +7,5 @@ def generateGraph(data, roundLimit):
     print("Start generating graph...")
     G = nx.Graph()
     G.add_weighted_edges_from(data[1])
-    print("Graph generated in: " + str(round(time.time() - start, roundLimit)) + "\n")
+    print(f"Graph generated in: {str(round(time.time() - start, roundLimit))}\n")
     return G
